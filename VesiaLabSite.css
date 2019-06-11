@@ -1,19 +1,22 @@
 nav {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bolder;
   font-size: 16px;
   z-index: 10;
 
 }
 
 header {
-background: url("http://static.simpledesktops.com/uploads/desktops/2015/02/25/Lattice.png");
-
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background: url("http://static.simpledesktops.com/uploads/desktops/2015/02/25/Lattice.png");
 }
 
 .jumbotron {
   height:100vh;
   min-height:400px;
-
   /*url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');*/
   z-index: -10;
   display: flex;
@@ -32,36 +35,58 @@ background: url("http://static.simpledesktops.com/uploads/desktops/2015/02/25/La
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: 	#ffffff;
+    color: #ffffff;
 }
 
-.navbar-custom .navbar-nav .nav-link {
-    color: 	#ffffff;
+.navbar-custom .navbar-collapse .navbar-nav .nav-link {
+    color: #ffffff;
 }
 
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: 	#A9A9A9;
+.navbar-custom .navbar-collapse .navbar-nav .nav-item.active .nav-link,
+.navbar-custom .navbar-collapse .navbar-nav .nav-item:hover .nav-link {
+    color: #23C8F1;
 }
 
-h1{
-  font-weight: 200;
+h2{
+  letter-spacing: 1px;
+}
+
+.textCarousel h1{
+  font-weight: bold;
   margin: 0.4em 0;
   color: white;
-  font-size: 50px;
+  font-size: 4.5em;
 }
-h1 { font-size: 5em; }
+
+.textCarousel h3{
+  font-size: 2.5em;
+  font-family: 'Yantramanav', sans-serif;
+  color: #23C8F1;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+
+.h3-bottom{
+  font-size: 1.5em;
+  font-family: 'Yantramanav', sans-serif;
+  font-weight: bolder;
+}
+
+.icon-background {
+    color: #23C8F1;
+}
+
+.icon {
+  color: white;
+}
 
 hr.style1{
 	border-top: 1px solid #8c8b8b;
-
 }
 
 .textCarousel {
   padding: 1em 2em;
-  font-size: 30px;
   color: #ffffff;
-
 }
 
 .img-circle {
@@ -229,6 +254,14 @@ hr.style1{
   }
   .cardBox:last-child {
     margin-bottom: 3%;
+  }
+  .navbar-custom {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: block;
+      transition: top 0.3s;
+      background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
   }
 }
 
