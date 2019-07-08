@@ -114,7 +114,6 @@ hr.style1{
     height: auto;
     max-width: 100%;
     align-items: center;
-
 }
 
 .vertical-align {
@@ -123,138 +122,13 @@ hr.style1{
     margin-top: 2em;
 }
 
-.cardBox {
-  float: left;
-  font-size: 1.2em;
-  margin: 1% 0 0 1%;
-  perspective: 800px;
-  transition: all 0.3s ease 0s;
-  width: 23.7%;
-}
-
-.cardBox:hover .card {
-  transform: rotateY( 180deg);
-}
-
-.card {
-  background: #222;
-  cursor: default;
-  height: 300px;
-  transform-style: preserve-3d;
-  transition: transform 0.4s ease 0s;
-  width: 100%;
-  -webkit-animation: giro 1s 1;
-  animation: giro 1s 1;
-}
-
-.card p {
-  margin-bottom: 1.8em;
-}
-
-.card .front,
-.card .back {
-  backface-visibility: hidden;
-  box-sizing: border-box;
-  color: white;
-  display: block;
-  font-size: 0.75em;
-  height: 100%;
-  padding: 0.8em;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
-.card .front strong {
-  background: #fff;
-  border-radius: 100%;
-  color: #222;
-  font-size: 0.75em;
-  line-height: 30px;
-  padding: 0 7px 4px 6px;
-}
-
-.card .back {
-  transform: rotateY( 180deg);
-}
-
-.card .back a {
-  padding: 0.3em 0.5em;
-  background: #333;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 1px;
-  font-size: 0.9em;
-  transition: all 0.2s ease 0s;
-}
-
-.card .back a:hover {
-  background: #fff;
-  color: #333;
-  text-shadow: 0 0 1px #333;
-}
-
-.cardBox:nth-child(1) .card .back {
-  background: #F96D6D;
-}
-
-.cardBox:nth-child(2) .card .back {
-  background: #F96D6D;
-}
-
-.cardBox:nth-child(3) .card .back {
-  background: #F96D6D;
-}
-
-.cardBox:nth-child(4) .card .back {
-  background: #F96D6D;
-}
-
-.cardBox:nth-child(2) .card {
-  -webkit-animation: giro 1.5s 1;
-  animation: giro 1.5s 1;
-}
-
-.cardBox:nth-child(3) .card {
-  -webkit-animation: giro 2s 1;
-  animation: giro 2s 1;
-}
-
-.cardBox:nth-child(4) .card {
-  -webkit-animation: giro 2.5s 1;
-  animation: giro 2.5s 1;
-}
-
-@-webkit-keyframes giro {
-  from {
-    transform: rotateY( 180deg);
-  }
-  to {
-    transform: rotateY( 0deg);
-  }
-}
-
-@keyframes giro {
-  from {
-    transform: rotateY( 180deg);
-  }
-  to {
-    transform: rotateY( 0deg);
-  }
+br {
+   display: block;
+   content: " ";
+   line-height:22px;
 }
 
 @media screen and (max-width: 767px) {
-  .cardBox {
-    margin-left: 2.8%;
-    margin-top: 3%;
-    width: 46%;
-  }
-  .card {
-    height: 285px;
-  }
-  .cardBox:last-child {
-    margin-bottom: 3%;
-  }
   .navbar-custom {
       position: fixed;
       top: 0;
@@ -266,21 +140,5 @@ hr.style1{
 }
 
 @media screen and (max-width: 480px) {
-  .cardBox {
-    width: 94.5%;
-  }
-  .card {
-    height: 260px;
-  }
-}
-.cardName{
-  text-align: center;
-  font-size: 0.75em;
-  height: 100%;
-  padding: 0.8em;
-  position: absolute;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  margin-top: 2em;
+
 }
