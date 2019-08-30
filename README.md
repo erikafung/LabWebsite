@@ -4,8 +4,8 @@ How to edit content:
 Open Index.html
 
 To change text:
-Edit the text contained between <h2> </h2> or <h4> </h4> tags, which surround headings
-Edit the text contained between <p> </p> tags, which surround paragraphs
+Edit the text contained between < h2 > < /h2 >" or < h4 > < /h4 >" tags, which surround headings
+Edit the text contained between < p > < /p > tags, which surround paragraphs
 To insert an empty line below a paragraph or spacing between paragraphs type <br> at the end of the last line of the paragraph
 
 To change an image:
