@@ -137,6 +137,8 @@ br {
       transition: top 0.3s;
       background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
   }
+ h1 {
+	display: none;
 }
 
 @media screen and (max-width: 480px) {
